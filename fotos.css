@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition:  .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#banner {
+    background-image: url(https://pbs.twimg.com/media/FBwJWeQXIAItfyH.jpg:large);
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+#salas-container {
+    width: 40%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+.description {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    justify-items: center;
+}
+
+/* .salas-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+} */
+
+.salas-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-top: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.card {
+    width: 90%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border: #D21617;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover {
+    transform: scale(1.04);
+}
+
+.banner-1 {
+    background-image: url(https://maceio.al.gov.br/uploads/imagens/wp-content/uploads/2021/10/jpg/2021/10/semas-criancas-abrigo-cinema-10.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://viajento.files.wordpress.com/2019/05/cinema-filme-3d.jpg?w=1200);
+}
+
+.banner-3 {
+    background-image: url(https://www.avforums.com/image.php?imageparameters=editorial/products/ff3d8b34d307f980e4a5bf931ccc29d8_0.jpg);
+}
+
+.banner-4 {
+    background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2012/04/atmos.jpg);
+}
+
+#button-position {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+        justify-items: center;
+}
+
+.button {
+    width: 200px;
+    height: 60px;
+    background-position: 50% 50%;
+    background-color: #D21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .8s;
+    font-size: 18px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 25px;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+   .footer-navigation {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #banner {
+        background-position: 40%;
+    }
+    
+    #trailer-container {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content {
+        width: 99%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 100%;
+    }
+
+    #title {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .description {
+        width: 100%;
+        color: #fff;
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        justify-items: center;
+    }
+
+    .button {
+        width: 100%;
+        margin-top: 30px ;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
